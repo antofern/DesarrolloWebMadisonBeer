@@ -1,0 +1,60 @@
+
+header{
+    grid-area: header;
+    width: auto;
+}
+
+.tituloprincipal{ 
+    background-color: #E8D6CB;
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+
+    .tituloPrincipalAnimado{
+        font-family: 'Abril Fatface', cursive;
+        color: #D0ADA7;
+        font-size: 2em;
+        text-transform: uppercase;
+    }
+}
+
+
+/* NAV*/
+
+nav{
+    grid-area: nav;
+    width: 100%;
+
+    ul li{ 
+        text-decoration:none;
+        letter-spacing: 4px;
+        font-family: 'Abril Fatface', cursive;
+        padding:10px;
+    }
+}
+
+.nav__menu{
+    list-style-position: inside;
+    list-style-type: none;
+    text-transform: uppercase;
+    text-decoration:none;
+    font-size: 1.7em;
+    background-color: #E8D6CB;
+}
+
+a{
+    text-decoration: none;
+    color:#AD6A6C;
+}
+
+ul li:hover{
+    background-color: white;
+    color:#AD6A6C;
+    
+    animation: pulse;
+    animation-duration: 2s;    
+}
+
+ul{
+    list-style-type: none;
+}

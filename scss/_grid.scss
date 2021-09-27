@@ -1,0 +1,22 @@
+
+#grid{
+    display:grid;
+    grid-template-areas: 
+    "nav nav"
+    "header header"
+    "article aside"
+    "footer footer";
+    grid-template-columns: 2fr 300px;
+    grid-row-gap: none;
+    column-gap:10px;
+    align-items: stretch;
+}
+
+aside{
+    grid-area: aside;
+    align-items: center;
+}
+
+article{
+    grid-area: article;
+}

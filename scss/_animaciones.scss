@@ -1,0 +1,12 @@
+.tituloArticleAnimado{
+    font-size: 20px;
+    color: #a59fa2;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: 'Abril Fatface', cursive;   
+}
+
+.tituloArticleAnimado:hover{
+    animation: fadeIn;
+    animation-duration: 2s;    
+}

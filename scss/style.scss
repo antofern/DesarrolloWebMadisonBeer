@@ -1,0 +1,109 @@
+//IMPORTADOS
+@import "mediaqueries";
+@import "grid";
+@import "header";
+@import "animaciones";
+
+//VAR COLOR
+$fondobloque: #b58db6;
+
+
+// HOLAAAA LRPM
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(/imagenes/fondo.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+
+/* BODY, ARTICULOS Y PARRAFOS */
+
+.tituloarticle{
+    background-color: #E8D6CB;
+    padding: 10px;
+}
+
+.parrafo{ 
+    background-color:white;
+    color: $fondobloque;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    padding: 30px;
+}
+
+.parrafoAside{
+    @extend .parrafo;
+}
+
+#articlePrincipal{
+    background-color: white;
+    position: relative;
+    height: 100%;
+}
+
+#articleAside{
+    background-color: white;
+    position: relative;
+    top: 0px;
+}
+
+.asideImg{
+    opacity: 0.65;
+
+    img:hover{
+        opacity:1;
+    }
+}
+
+
+
+/* FOOTER */
+
+footer{
+    grid-area: footer;
+    flex-direction: column;
+    width: 100%;
+    background-color: #E8D6CB;
+    align-items: center;
+}
+
+.menuRedes{
+    display: flex;
+    align-content: space-between;
+    list-style-position: inside;
+    list-style-type: none;
+    text-transform: uppercase;
+    text-decoration:none;
+    list-style-position: inside;
+    list-style-type: none;
+    text-decoration:none;
+    font-size: 20px;
+}
+
+.tituloarticleFooter{
+    background-color: #E8D6CB;
+    font-size: 20px;
+    color: #5d2e46;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: 'Abril Fatface', cursive;
+    width: 100%;
+}
+
+/* TABLA TIENDA*/
+
+.headerTabla{
+    background-color: #5d2e46;
+    font-size: 20px;
+}
+
+
+.cuerpoTabla{
+    background-color: #b3b3b3;
+    width:100%
+}
