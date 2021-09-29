@@ -12,79 +12,87 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="C:\Users\Nanto\Desktop\ENTREGAS\desarrolloweb\estilo\estilo.css">
+    <link rel="stylesheet" href="../estilo/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <title>Madison Beer</title>
+    <link rel="shortcut icon" href="./imagenes/favimb.png" type="image/png">
 </head>
 
-<body id="grid">
+<body>
 
-    <header>
-        <h1 class="tituloprincipal"><p class="tituloPrincipalAnimado animate__animated animate__fadeInRight">Madison Beer</p></h1>
-    </header>
+        <header>
+            <h1 class="tituloprincipal"><p class="tituloPrincipalAnimado animate__animated animate__fadeInRight">Madison Beer</p></h1>
+        </header>
 
         <nav class="navbar sticky-top navbar-light bg-light nav__menu animate__animated animate__fadeInLeft">
             <div class="container-fluid">
-                <a class="navbar-brand" href="C:\Users\Nanto\Desktop\ENTREGAS\desarrolloweb\index.html"><li>Inicio</li></a>
-                <a class="navbar-brand" href="C:\Users\Nanto\Desktop\ENTREGAS\desarrolloweb\fotos.html"><li>Fotos</li></a>
-                <a class="navbar-brand" href="C:\Users\Nanto\Desktop\ENTREGAS\desarrolloweb\tienda.html"><li>Tienda</li></a>
-                <a class="navbar-brand" href="C:\Users\Nanto\Desktop\ENTREGAS\desarrolloweb\tour.html"><li>Tour</li></a>
-                <a class="navbar-brand" href="C:\Users\Nanto\Desktop\ENTREGAS\desarrolloweb\contacto.html"><li>Contacto</li></a>
+                <a class="navbar-brand" href="../index.html"><li>Inicio</li></a>
+                <a class="navbar-brand" href="../pages/fotos.html"><li>Fotos</li></a>
+                <a class="navbar-brand" href="../pages/tienda.html"><li>Tienda</li></a>
+                <a class="navbar-brand" href="../pages/tour.html"><li>Tour</li></a>
+                <a class="navbar-brand" href="../pages/contacto.html"><li>Contacto</li></a>
             </div>
         </nav>
 
-    <section>
+        <div class="container-fluid"> <!-- Contenedor-->
+            <div class="row"> <!-- FILA 1-->
+                <div class="col"> <!-- Columna 1-->
+                    <section>
+                        <article id="articlePrincipal">
+                            <h2 class="tituloarticle"><p class="tituloArticleAnimado animate__animated animate__fadeInDown">Fotos</p></h2>
+                            <p class="parrafo">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <img src="../imagenes/madisonbeer1.jpg" alt="Madison Beer 1" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="../imagenes/madisonbeer2.png" alt="Madison Beer 2" class="d-block w-100">
+                                    </div>
+                                  </div>
+                                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                  </button>
+                                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                  </button>
+                                </div>
 
-        <article>
-            <h3 class="tituloarticle">Fotos</h3>
-
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="/imagenes/madisonbeer2.png" alt="Madison Beer 1" class="d-block w-100">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/imagenes/madisonbeer1.jpg" alt="Madison Beer 2" class="d-block w-100">
-                  </div>
+                            </p>
+                        </article>
+                    </section>
+                    
+                    <footer>
+                        <h4 class="tituloarticle"><p class="tituloArticleAnimado animate__animated animate__fadeInDown">Redes sociales</p></h4>
+                        <nav>
+                            <ul class="menuRedes animate__animated animate__fadeInLeft parrafo">
+                                <li><a href="https://www.instagram.com/madisonbeer"><img src="./imagenes/iconoig.png"></li>
+                                <li><a href="https://www.tiktok.com/@madisonbeer"><img src="./imagenes/iconotiktok.png"></a></li>
+                                <li><a href="https://twitter.com/madisonbeer"><img src="./imagenes/iconotw.png"></a></li>
+                            </ul>
+                           
+                        </nav>
+                    </footer>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-
-        </article>
-    </section>
-
-    <aside>
-        <article id="articleAside">
-            <div class="card animate__animated animate__fadeInRight" style="width: 18rem;">
-                <img src="/imagenes/madisonbeer3.jpg"" class="card-img-top asideImg" alt="Madison Beer">
-                <div class="card-body">
-                  <h5 class="card-title">Próximos tours</h5>
-                  <p class="card-text">Nuevas fechas anunciadas para el tour de "Life Support" en el Reino Unido.</p>
-                  <a href="tour.html" class="btn btn-primary">Ver más</a>
+                <div class="col-md-3"> <!-- Columna 2-->
+                    <aside>
+                        <article id="articleAside">
+                                <center><div class="card animate__animated animate__fadeInRight" style="width: 20rem;">
+                                    <img src="./imagenes/madisonbeer3.jpg" class="card-img-top" alt="Madison Beer">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Próximos tours</h5>
+                                        <p class="card-text">Nuevas fechas anunciadas para el tour de "Life Support" en el Reino Unido.</p>
+                                        <a href="./pages/tour.html" class="btn btn-primary">Ver más</a>
+                                    </div>
+                                </div></center> 
+                        </article>
+                    </aside>
                 </div>
-            </div> 
-        </article>
-    </aside>
-
-    <footer>
-        <nav>
-            <h5 class="tituloarticle">Redes sociales</h5>
-            <ul class="menuRedes">
-                <li><a href="https://www.instagram.com/">Instagram</a></li>
-                <li><a href="https://www.tiktok.com/@madisonbeer">TikTok</a></li>
-                <li><a href="https://twitter.com/madisonbeer">Twitter</a></li>
-            </ul>
-        </nav>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-</body>
-</html>
+            </div><!-- FIN FILA 1-->
+        </div>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    </body>
+    </html>
