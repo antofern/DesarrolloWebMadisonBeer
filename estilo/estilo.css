@@ -1,42 +1,10 @@
-@media only screen and (max-width: 480px) {
-  #grid {
-    grid-template-columns: 1fr;
-    grid-template-areas: "header"
- "nav"
- "aside"
- "article"
- "footer"; } }
-
-@media only screen and (max-width: 700px) {
-  #grid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "header header"
- "nav aside"
- "nav aside"
- "article article"
- "footer footer"; } }
-
-@media only screen and (max-width: 1020px) {
-  #grid {
-    grid-template-areas: "header header header"
- "nav article aside"
- "footer footer footer";
-    grid-template-columns: 20% 2fr 300px;
-    grid-row-gap: none;
-    gap: 10px;
-    align-items: stretch; } }
-
 #grid {
   display: grid;
-  grid-template-areas: "nav nav"
- "header header"
- "article aside"
- "footer footer";
+  grid-template-areas: "nav nav" "header header" "article aside" "footer footer";
   grid-template-columns: 2fr 300px;
   grid-row-gap: none;
   column-gap: 10px;
-  align-items: stretch;
-}
+  align-items: stretch; }
 
 aside {
   grid-area: aside;
@@ -54,8 +22,7 @@ header {
   width: 100%;
   text-align: right;
   padding: 10px; }
-
-.tituloprincipal .tituloPrincipalAnimado {
+  .tituloprincipal .tituloPrincipalAnimado {
     font-family: 'Abril Fatface', cursive;
     color: #D0ADA7;
     font-size: 2em;
@@ -65,7 +32,6 @@ header {
 nav {
   grid-area: nav;
   width: 100%; }
-
   nav ul li {
     text-decoration: none;
     letter-spacing: 4px;
@@ -88,18 +54,10 @@ ul li:hover {
   background-color: white;
   color: #AD6A6C;
   animation: pulse;
-  animation-duration: 2s;
-}
+  animation-duration: 2s; }
 
 ul {
   list-style-type: none; }
-
-.tituloArticleAnimado {
-  font-size: 20px;
-  color: #a59fa2;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  font-family: 'Abril Fatface', cursive; }
 
 .tituloArticleAnimado:hover {
   animation: fadeIn;
@@ -107,20 +65,24 @@ ul {
 
 * {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 body {
   background-image: url(../imagenes/fondo.jpg);
   background-repeat: repeat;
-  background-size: cover; 
-}
+  background-size: cover; }
 
 /* BODY, ARTICULOS Y PARRAFOS */
 .tituloarticle {
   background-color: #E8D6CB;
   padding: 10px;
-}
+  text-align: center; }
+  .tituloarticle .tituloArticleAnimado {
+    font-size: 30px;
+    color: #a59fa2;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: 'Atkinson Hyperlegible', sans-serif; }
 
 .parrafo, .parrafoAside {
   background-color: white;
