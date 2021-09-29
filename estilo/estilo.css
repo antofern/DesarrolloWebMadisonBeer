@@ -111,7 +111,7 @@ ul {
 }
 
 body {
-  background-image: url(C:\Users\Nanto\Desktop\ENTREGAS\desarrolloweb\imagenes\fondo.jpg);
+  background-image: url(../imagenes/fondo.jpg);
   background-repeat: repeat;
   background-size: cover; 
 }
