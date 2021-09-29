@@ -24,6 +24,15 @@ body{
 .tituloarticle{
     background-color: #E8D6CB;
     padding: 10px;
+    text-align:center;
+
+    .tituloArticleAnimado{
+        font-size: 30px;
+        color: #a59fa2;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-family: 'Abril Fatface', cursive; 
+    }
 }
 
 .parrafo{ 
