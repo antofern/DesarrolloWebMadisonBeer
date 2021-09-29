@@ -76,12 +76,16 @@ footer{
     flex-direction: column;
     width: 100%;
     background-color: #E8D6CB;
-    align-items: center;
+    align-content: center;
+}
+
+nav{
+    align-content:center;
 }
 
 .menuRedes{
     display: flex;
-    align-content: space-between;
+    align-content: center;
     list-style-position: inside;
     list-style-type: none;
     text-transform: uppercase;
