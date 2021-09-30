@@ -39,39 +39,39 @@
         <article id="articlePrincipal">
             <h2 class="tituloarticle">Formulario de contacto</h2>
             <p class="parrafo">A continuación, ingrese sus datos para recibir novedades, descuentos y promociones.</p>
-            <br>
-            
-            <form action="" name="newsletter" method="">
-                <fieldset>
-                    <legend>
-                        Newsletter
-                    </legend>
+                    <form class="col-md-6">
+                        <div class="mb-3">
+                          <label for="nombreUsuario" class="form-label">Nombre y apellido:</label>
+                          <input type="email" class="form-control" id="nombreUsuario" aria-describedby="emailHelp" placeholder="Ingrese nombre y apellido">
+                        </div>
 
-                    <label for="nombreUsuario">Ingrese su nombre completo: </label><input type="text" placeholder="Ingrese nombre y apellido" id="nombreUsuario" maxlength="20">
-                    <br>
-                    <label for="emailUsuario">Ingrese su email: </label><input type="text" placeholder="Ingrese su email" id="emailUsuario" maxlength="25">
-                    <br>
-                    <label for="generoUsuario">Seleccione su género: </label>
-                    <select name="listaselecciongenero" id="generoUsuario">
-                        <option value="listaselecciongenero">Mujer</option>
-                        <option value="listaselecciongenero">Hombre</option>
-                    </select>
-                    <br>
-                    <label for="usuarioContenido">Seleccione el tipo de contenido que quiere recibir en su casilla de email:</label>
-                    <ul>
+                        <div class="mb-3">
+                          <label for="emailUsuario" class="form-label">Email:</label>
+                          <input type="password" class="form-control" id="emailUsuario">
+                        </div>
+
+                        <select class="form-select" aria-label="Seleccione su genero" name="listaselecciongenero" id="generoUsuario">
+                            <option selected>Seleccione su género</option>
+                            <option value="1">Femenino</option>
+                            <option value="2">Masculino</option>
+                          </select>
+
+                          <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                          </div>
+    
+
+                        <br>
+
+                        <button type="submit" class="btn btn-primary">Submit</button> <button type="submit" class="btn btn-primary">Resetear</button>
+                      </form>
+
                         <li><input type="checkbox" name="novedadesMadison" id="usuarioContenido"> Novedades sobre Madison Beer</li>
                         <li><input type="checkbox" name="tiendaMadison" id="usuarioContenido"> Descuentos en la tienda</li>
                         <li><input type="checkbox" name="novedadesTour" id="usuarioContenido"> Próximos tours de Madison Beer</li>
                     </ul>
-                    
-                    
-                    <br>
-                    <input type="reset" value="Resetear formulario">
-                    <input type="submit" value="Enviar">
-                </fieldset>
 
-
-            </form>
         </article>
     </section>
 
