@@ -59,6 +59,9 @@ ul li:hover {
 ul {
   list-style-type: none; }
 
+.navlogo {
+  width: 300px; }
+
 .tituloArticleAnimado:hover {
   animation: fadeIn;
   animation-duration: 2s; }
@@ -68,65 +71,54 @@ ul {
   padding: 0; }
 
 body {
-  background-image: url(../imagenes/fondo.jpg);
-  background-repeat: repeat;
+  background-image: linear-gradient(180deg, #694742 0, #67413e 10%, #64393b 20%, #613137 30%, #5e2934 40%, #591f32 50%, #541530 60%, #4e0a30 70%, #480130 80%, #410031 90%, #3a0033 100%);
   background-size: cover; }
 
 /* BODY, ARTICULOS Y PARRAFOS */
 .tituloarticle {
-  background-color: #E8D6CB;
+  background-color: #343a40;
   padding: 10px;
   text-align: center; }
-  .tituloarticle .tituloArticleAnimado {
+  .tituloarticle .tituloArticleAnimado::selection {
     font-size: 30px;
-    color: #4b4749;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-family: 'Atkinson Hyperlegible', sans-serif; }
 
+h2::selection {
+  background-image: radial-gradient(circle at 50% -20.71%, #ffac6c 0, #ff9d6f 12.5%, #ff8d71 25%, #f17d70 37.5%, #d86c6c 50%, #be5d67 62.5%, #a75162 75%, #93475d 87.5%, #82405a 100%); }
+
 .parrafo, .parrafoAside {
-  background-color: white;
-  color: #b58db6;
+  background-color: #343a40;
+  color: white;
   font-family: 'Atkinson Hyperlegible', sans-serif;
   padding: 30px; }
 
 #articlePrincipal {
-  background-color: white;
+  background-color: #343a40;
   position: relative;
-  height: 100%; }
+  height: 100%;
+  margin: 150px 100px 50px 100px; }
 
 #articleAside {
-  background-color: white;
+  background-color: #343a40;
   position: relative;
   top: 0px; }
-
-.asideImg {
-  opacity: 0.65; }
-  .asideImg img:hover {
-    opacity: 1; }
 
 /* FOOTER */
 footer {
   grid-area: footer;
+  display: flex;
   flex-direction: column;
   width: 100%;
   background-color: #E8D6CB;
   align-content: center; }
 
-nav {
-  align-content: center; }
-
 .menuRedes {
-  display: flex;
   align-content: center;
-  list-style-position: inside;
   list-style-type: none;
-  text-transform: uppercase;
-  text-decoration: none;
   list-style-position: inside;
-  list-style-type: none;
-  text-decoration: none;
-  font-size: 20px; }
+  list-style-type: none; }
 
 .tituloarticleFooter {
   background-color: #E8D6CB;
@@ -135,13 +127,4 @@ nav {
   text-transform: uppercase;
   letter-spacing: 4px;
   font-family: 'Abril Fatface', cursive;
-  width: 100%; }
-
-/* TABLA TIENDA*/
-.headerTabla {
-  background-color: #5d2e46;
-  font-size: 20px; }
-
-.cuerpoTabla {
-  background-color: #b3b3b3;
   width: 100%; }
