@@ -20,53 +20,79 @@
 </head>
 
 <body>
-
-        <header>
-            <h1 class="tituloprincipal"><p class="tituloPrincipalAnimado animate__animated animate__fadeInRight">Madison Beer</p></h1>
-        </header>
-
-        <nav class="navbar sticky-top navbar-light bg-light nav__menu animate__animated animate__fadeInLeft">
+  <nav class="navbar navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><li>Inicio</li></a>
-                <a class="navbar-brand" href="../pages/fotos.html"><li>Fotos</li></a>
-                <a class="navbar-brand" href="../pages/tienda.html"><li>Tienda</li></a>
-                <a class="navbar-brand" href="../pages/tour.html"><li>Tour</li></a>
-                <a class="navbar-brand" href="../pages/contacto.html"><li>Contacto</li></a>
+            <a class="navbar-brand" href="./index.html"><img src="../imagenes/MADISONLOGO-1024x163-1.png" class="navlogo img-fluid" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENÚ</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./tour.html">Tour</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./fotos.html">Fotos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                    
+                  </ul>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
             </div>
-        </nav>
-
-    <section>
+  </nav>
+  
+  <div class="container-fluid"> <!-- Contenedor-->
+    <div class="row"> <!-- FILA 1-->
+      <div class="col"> <!-- Columna 1-->
         <article id="articlePrincipal">
-            <h2 class="tituloarticle">Life Support tour en Reino Unido</h2>
-            <p class="parrafo">...</p>
-            
+          <h2 class="tituloarticle"><p class="tituloArticleAnimado animate__animated animate__fadeInDown">Tours</p></h2>
+          <p class="parrafo">aaaaa</p>
         </article>
-    </section>
-
-    <aside>
-        <article id="articleAside">
-            <div class="card animate__animated animate__fadeInRight" style="width: 18rem;">
-                <img src="/imagenes/madisonbeer3.jpg"" class="card-img-top" alt="Madison Beer">
+        
+        <footer>
+          <ul class="animate__animated animate__fadeInLeft iconRedes">
+            <li class="iconRedes"><a href="https://www.instagram.com/madisonbeer"><img src="../imagenes/iconoig.png"></li>
+            <li class="iconRedes"><a href="https://www.tiktok.com/@madisonbeer"><img src="../imagenes/iconotiktok.png"></a></li>
+            <li class="iconRedes"><a href="https://twitter.com/madisonbeer"><img src="../imagenes/iconotw.png"></a></li>
+          </ul>  
+        </footer>
+      </div> <!--FIN COLUMNA 1-->
+      
+      <div class="col-md-3"> <!-- Columna 2-->
+        <aside>
+          <article id="articleAside">
+            <center><div class="card animate__animated animate__fadeInRight">
+              <img src="../imagenes/madisonbeer3.jpg" class="card-img-top" alt="Madison Beer" style="widht: 150px";>
                 <div class="card-body">
                   <h5 class="card-title">Próximos tours</h5>
-                  <p class="card-text">Nuevas fechas anunciadas para el tour de "Life Support" en el Reino Unido.</p>
-                  <a href="tour.html" class="btn btn-primary">Ver más</a>
+                  <p class="card-text"></p>
+                   <a href="./pages/tour.html" class="btn btn-primary">Ver más</a>
                 </div>
-            </div> 
-        </article>
-    </aside>
-
-    <footer>
-        <nav>
-            <h3 class="tituloarticle">Redes sociales</h4>
-            <ul class="menuRedes">
-                <li><a href="https://www.instagram.com/">Instagram</a></li>
-                <li><a href="https://www.tiktok.com/@madisonbeer">TikTok</a></li>
-                <li><a href="https://twitter.com/madisonbeer">Twitter</a></li>
-            </ul>
-        </nav>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+            </div></center> 
+          </article>
+        </aside>
+      </div>
+    </div><!-- FIN FILA 1-->
+    
+  </div> <!--fin contenedor-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>
