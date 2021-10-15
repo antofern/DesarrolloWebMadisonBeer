@@ -1,18 +1,3 @@
-#grid {
-  display: grid;
-  grid-template-areas: "nav nav" "header header" "article aside" "footer footer";
-  grid-template-columns: 2fr 300px;
-  grid-row-gap: none;
-  column-gap: 10px;
-  align-items: stretch; }
-
-aside {
-  grid-area: aside;
-  align-items: center; }
-
-article {
-  grid-area: article; }
-
 header {
   grid-area: header;
   width: auto; }
@@ -38,17 +23,10 @@ nav {
     font-family: 'Abril Fatface', cursive;
     padding: 10px; }
 
-.nav__menu {
-  list-style-position: inside;
-  list-style-type: none;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 1.7em;
-  background-color: #E8D6CB; }
-
 a {
   text-decoration: none;
-  color: #AD6A6C; }
+  color: #AD6A6C;
+  text-transform: uppercase; }
 
 ul li:hover {
   background-color: white;
@@ -76,55 +54,39 @@ body {
 
 /* BODY, ARTICULOS Y PARRAFOS */
 .tituloarticle {
-  background-color: #343a40;
+  background-color: white;
   padding: 10px;
-  text-align: center; }
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase; }
   .tituloarticle .tituloArticleAnimado::selection {
-    font-size: 30px;
-    text-transform: uppercase;
     letter-spacing: 4px;
     font-family: 'Atkinson Hyperlegible', sans-serif; }
-
-h2::selection {
-  background-image: radial-gradient(circle at 50% -20.71%, #ffac6c 0, #ff9d6f 12.5%, #ff8d71 25%, #f17d70 37.5%, #d86c6c 50%, #be5d67 62.5%, #a75162 75%, #93475d 87.5%, #82405a 100%); }
 
 .parrafo, .parrafoAside {
   background-color: #343a40;
   color: white;
   font-family: 'Atkinson Hyperlegible', sans-serif;
-  padding: 30px; }
+  padding: 30px;
+  font-size: 20px; }
 
 #articlePrincipal {
   background-color: #343a40;
   position: relative;
-  height: 100%;
-  margin: 150px 100px 50px 100px; }
+  margin: 100px 100px 50px 100px; }
 
 #articleAside {
-  background-color: #343a40;
   position: relative;
-  top: 0px; }
+  margin-top: 100px; }
 
 /* FOOTER */
-footer {
-  grid-area: footer;
+.menuRedes, .iconRedes {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  background-color: #E8D6CB;
-  align-content: center; }
-
-.menuRedes {
   align-content: center;
   list-style-type: none;
   list-style-position: inside;
   list-style-type: none; }
 
-.tituloarticleFooter {
-  background-color: #E8D6CB;
-  font-size: 20px;
-  color: #5d2e46;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  font-family: 'Abril Fatface', cursive;
-  width: 100%; }
+.iconRedes {
+  align-content: center;
+  justify-content: center; }
