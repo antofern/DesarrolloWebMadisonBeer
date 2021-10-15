@@ -73,7 +73,7 @@ body {
 #articlePrincipal {
   background-color: #343a40;
   position: relative;
-  margin: 100px 100px 50px 100px; }
+  margin: 100px 0px 50px 0px; }
 
 #articleAside {
   position: relative;
